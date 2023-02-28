@@ -1500,9 +1500,21 @@ nav a {
 .provider-information img {
     margin-bottom: 50px;
 }
-/* .item a, .items a {
-    margin: 0 auto;
-} */
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 50%;
+    background: #E71212;
+    top: -1px;
+    right: -1px;
+    border: 1px solid #FFF6F3;
+}
 /* Coder End */
 
 @media only screen and (min-width: 768px) and (max-width: 860px) {

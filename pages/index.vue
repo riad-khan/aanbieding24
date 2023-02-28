@@ -1,4 +1,5 @@
 <script>
+// "dev": "nuxt --hostname 188.166.245.199 --port 3000",
 
 </script>
 <template>

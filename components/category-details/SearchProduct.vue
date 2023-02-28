@@ -45,6 +45,8 @@ export default {
 </script>
 
 <template>
+    
+
     <div class="product-search-area mt-10">
         <h2 class="flex items-center text-[#2B313B] font-bold text-[20px] mb-1">Search for Product</h2>
         <p class="tag-line text-[#6C7A93] text-sm font-normal mb-6">View all Loungeset Products</p>
@@ -204,9 +206,21 @@ export default {
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
-                        class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
                 </div>
             </a>
         </div>
@@ -244,8 +258,9 @@ export default {
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                        class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                             width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -293,9 +308,21 @@ export default {
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
-                        class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
                 </div>
             </a>
         </div>
@@ -334,7 +361,7 @@ export default {
                         class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
                                 class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                        class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                                type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                             width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -381,9 +408,21 @@ export default {
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
-                        class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
                 </div>
             </a>
         </div>
@@ -422,7 +461,7 @@ export default {
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
                                 class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                        class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                                type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                             width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -470,9 +509,21 @@ export default {
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
-                        class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
                 </div>
             </a>
         </div>
@@ -511,7 +562,7 @@ export default {
                         class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
                                 class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                        class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                                type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                             width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -557,11 +608,23 @@ export default {
                     </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
             </div>
             <div class="flex justify-between items-center mt-2">
-                <button
-                    class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
-                        class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                            class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-            </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
         </a>
     </div>
     <div class="item">
@@ -599,7 +662,7 @@ export default {
                     class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                         class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
                             class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                    class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                         width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -646,11 +709,23 @@ export default {
                     </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
             </div>
             <div class="flex justify-between items-center mt-2">
-                <button
-                    class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span
-                        class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                            class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-            </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
         </a>
     </div>
     <div class="item">
@@ -688,7 +763,7 @@ export default {
                     class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                         class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
                             class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                    class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                         width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -776,8 +851,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -806,7 +896,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="currentColor"/>
 </svg>
@@ -838,8 +928,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -868,7 +973,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="#112954"/>
 </svg></button>
@@ -899,8 +1004,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -929,7 +1049,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="currentColor"/>
 </svg>
@@ -961,8 +1081,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -991,7 +1126,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="#112954"/>
 </svg></button>
@@ -1022,8 +1157,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -1052,7 +1202,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="currentColor"/>
 </svg>
@@ -1084,8 +1234,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -1114,7 +1279,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="#112954"/>
 </svg></button>
@@ -1145,8 +1310,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -1175,7 +1355,7 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="currentColor"/>
 </svg>
@@ -1207,8 +1387,23 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954] opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2 w-full"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button>
-                    </div>
+                    <button
+                        class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button
+                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill-rule="evenodd" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
                     </a>
                 </div>
                 <div class="item">
@@ -1237,7 +1432,8 @@ export default {
 </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button class="view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                        <button  type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z" fill="#112954"/>
 </svg></button>

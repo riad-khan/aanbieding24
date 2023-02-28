@@ -1,4 +1,6 @@
 <script>
+
+
   // import Swiper core and required modules
   import { Navigation, A11y, Autoplay } from 'swiper';
 
@@ -64,6 +66,9 @@
 }
 </style>
 <template>
+
+
+
     <div>
         <swiper     
     :breakpoints="{

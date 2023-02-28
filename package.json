@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt --hostname 188.166.245.199 --port 3000",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "start": "nuxt start",
     "preview": "nuxt preview",
@@ -16,9 +16,10 @@
     "tailwindcss": "^3.2.6"
   },
   "dependencies": {
+    "chart.js": "^4.2.1",
+    "flowbite": "^1.6.3",
     "jquery": "^3.6.3",
     "swiper": "^9.0.5"
-   
   },
   "config": {
     "nuxt": {
