@@ -1,21 +1,21 @@
 <script>
-import Chart from 'chart.js/auto';
-import { getRelativePosition } from 'chart.js/helpers';
+import Chart from 'chart.js/auto/auto.mjs';
+
 export default {
     
     data() {
         return {
-            config1: {
+          config1: {
         type: 'line',
         data: {
-          labels: [],
+          labels: ["name","email"],
           datasets: [{
             label: 'Totaal Meldingen',
-            data: [],
-            lineTension: 0,
+            data: [25,35.45],
             backgroundColor: [
               'rgba(43,88,130,0.4)',
             ],
+
             pointRadius: 1,
             pointHoverRadius: 1,
             fill: true,
@@ -27,14 +27,7 @@ export default {
             borderWidth: 3
           }]
         },
-        options: {    
-            onClick: (e) => {
-                    const canvasPosition = getRelativePosition(e, chart);
-
-                    // Substitute the appropriate scale IDs
-                    const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
-                    const dataY = chart.scales.y.getValueForPixel(canvasPosition.y);
-                    },
+        options: {
           scales: {
             y: {
               display: false
@@ -76,7 +69,7 @@ export default {
         }
     },
     mounted() {
-        this.ChartRender()
+        this.ChartRender();
     },
     methods: {
         ChartRender() {
@@ -181,11 +174,7 @@ import { onMounted } from 'vue'
                                 </div>
                             </button>
                         </div>
-                        <div class="chart-wrapper">
-                            <div ref="aanbiending24" class="">
-                      <canvas id="myChart1" width="400" height="400"></canvas>
-                    </div>
-                        </div>
+                       
                     </div>
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                         With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
@@ -225,6 +214,13 @@ import { onMounted } from 'vue'
                 <!-- product table start -->
 
                 <CategoryDetailsProductTable />
+
+
+                <div class="chart-wrapper">
+                            <div  class="">
+                           <canvas id="myChart1"></canvas>
+                    </div>
+                        </div>
 
                 <!-- product table end -->
 
