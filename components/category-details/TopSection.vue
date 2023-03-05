@@ -1,5 +1,5 @@
 <template>
-                    <div class="flex py-6 flex-col items-center ">
+                <div class="flex py-6 flex-col items-center ">
                     <div class="content text-left flex-none sm:flex sm:justify-between sm:items-center">
 
                         <div class="text-content flex flex-col md:w-1/2 text-left md:pr-8">

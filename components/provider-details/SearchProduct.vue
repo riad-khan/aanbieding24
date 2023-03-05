@@ -685,49 +685,52 @@ export default {
 
     <!-- subscrition start -->
 
-<div class="subscription-area p-10 text-center">
+    <div class="subscription-area p-10 text-center">
     <div class="inner-area-subs">
         <h2 class="text-black text-2xl font-bold mb-4">Be the first to receive new Lounge set offers in your email inbox</h2>
-        <div class="form-area flex items-center justify-between">
-            <div class="input-area">
-                <form action="" method="post">
-                    <input type="hidden" name="" value="">
-                    <div class="relative single-field-wrapper">
-                       <input type="text"  class="rounded-md bg-white border border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full md:w-96 p-3" placeholder="johndoe@email.com" name="search" required="">
-                    </div>
-                </form>
-            </div>
-            <div class="filter-s">
-                <form action="" class="flex flex-col text-left">
-                <div class="">
-                    <div class="no-label w-full sm:w-32">
-                        <div class="select" id="daily">
-                            <div class="selectBtn" data-type="firstOption"> Daily</div>
-                            <div class="selectDropdown">
+        <div class="form-area flex flex-col lg:flex-row items-center justify-between">
+            <div class="flex items-center w-full lg:w-auto justify-between">
+                <div class="input-area mr-4 flex w-full lg:w-96">
+                    <form action="" method="post" class="w-full lg:w-96">
+                        <input type="hidden" name="" value="">
+                        <div class="relative single-field-wrapper">
+                        <input type="text"  class="rounded-md bg-white border border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full lg:w-96 p-3" placeholder="johndoe@email.com" name="search" required="">
+                        </div>
+                    </form>
+                </div>
+                <div class="filter-s">
+                    <form action="" class="flex flex-col text-left">
+                        <div class="">
+                            <div class="no-label w-32">
+                                <div class="select" id="daily">
+                                    <div class="selectBtn" data-type="firstOption"> Daily</div>
+                                    <div class="selectDropdown">
 
-                                <div class="option" data-value="all" data-type="firstOption">Daily 1</div>
-                                <div class="option" data-type="secondOption" data-value="internet-tv">
-                                    Daily 2
-                                </div>
-                                <div class="option" data-type="secondOption" data-value="internet-bellen">
-                                    Daily 3
-                                </div>
-                                <div class="option" data-type="secondOption" data-value="internet">
-                                    Daily 4
+                                        <div class="option" data-value="all" data-type="firstOption">Daily 1</div>
+                                        <div class="option" data-type="secondOption" data-value="internet-tv">
+                                            Daily 2
+                                        </div>
+                                        <div class="option" data-type="secondOption" data-value="internet-bellen">
+                                            Daily 3
+                                        </div>
+                                        <div class="option" data-type="secondOption" data-value="internet">
+                                            Daily 4
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
             </div>
-            <div class="subs-btn">
-                <a href="" class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#0052FE] opacity-100 hover:opacity-90 transition text-white text-sm font-bold py-2.5 px-14 rounded-lg ">Subscribe</a>
+            <div class="subs-btn w-full lg:w-fit mt-3 lg:mt-0">
+                <a href="" class="outline-btn btn-translate-z flex w-full lg:w-fit m-auto lg:m-0 bg-[#0052FE] opacity-100 hover:opacity-90 transition text-white justify-center text-sm font-bold py-2.5 px-14 rounded-[5px] ">Subscribe</a>
             </div>
         </div>
         <p class="text-[#6C7A93] text-xs font-normal mt-3">You will only receive emails when there are actually new offers. No unnecessary spam</p>
     </div>
 </div>
+
 
 <!-- subscrition End -->
 

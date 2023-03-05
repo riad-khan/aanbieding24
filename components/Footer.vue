@@ -96,10 +96,10 @@ methods:{
                         <h2 class="mb-6 text-base font-semibold text-[#2B313B] ">About Us</h2>
                         <ul class="text-xs font-normal leading-5 text-[#6C7A93]">
                             <li class="mb-4">
-                                <a href="#" class="">About Us</a>
+                                <NuxtLink to="/about-us">About Us</NuxtLink>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="">Contact Us</a>
+                                <NuxtLink to="/contact-us">Contact Us</NuxtLink>
                             </li>
                             <li class="mb-4">
                                 <a href="#" class="">Daily Offers</a>

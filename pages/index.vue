@@ -43,7 +43,7 @@
                         Bol offers</a>
                     <a class="service-btn lg:mx-auto flex flex-col md:flex-row border border-[#F5F8FF] items-center bg-white text-[#2B313B] grow w-full lg:w-[250px] text-sm font-semibold p-[17px] rounded-md hover:text-[#135FFF]" href=""><img src="@/assets/img/providers/Rectangle897-1.png" class="mr-0 md:mr-3 h-auto w-auto" alt="icon">
                         MediaMrkt offers</a>
-                    <a class="service-btn flex flex-col md:flex-row border border-[#F5F8FF] items-center bg-white text-[#2B313B] grow w-full lg:w-[250px] text-sm font-semibold p-[17px] rounded-md hover:text-[#135FFF]" href=""><img src="@/assets/img/providers/Rectangle897-2.png" class="mr-0 md:mr-3 h-auto w-auto" alt="icon"> Amazon offers
+                    <a class="service-btn flex flex-col md:flex-row border border-[#F5F8FF] items-center bg-white text-[#2B313B] grow w-full lg:w-[250px] text-sm font-semibold p-[17px] rounded-md hover:text-[#135FFF]" href=""><img src="@/assets/img/providers/amazon-brand.png" class="mr-0 md:mr-3 h-auto w-auto" alt="icon"> Amazon offers
                         </a>
                     
                     <a class="service-btn flex flex-col md:flex-row border border-[#F5F8FF] items-center bg-white text-[#2B313B] grow w-full lg:w-[250px] text-sm font-semibold p-[17px] rounded-md hover:text-[#135FFF]" href="/car-insurance"><img src="@/assets/img/providers/Rectangle897-3.png" class="mr-0 md:mr-3 h-auto w-auto" alt="icon"> wehkamp offers</a>
