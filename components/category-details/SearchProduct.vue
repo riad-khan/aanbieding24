@@ -1,6 +1,8 @@
 <script>
 import Chart from 'chart.js/auto/auto.mjs';
 
+
+
 export default {
     data() {
         return {
@@ -11,9 +13,16 @@ export default {
           datasets: [{
             label: 'Totaal Meldingen',
             data: [200,250,350,300,250,350,200],
-            backgroundColor: [
-              'linear-gradient(180deg, rgb(0 82 254) , rgba(0, 81, 255, 0))',
-            ],
+            backgroundColor: (ctx) => {
+              const canvas = ctx.chart.ctx;
+              const gradient = canvas.createLinearGradient(0,0,0,160);
+
+              gradient.addColorStop(1, 'blue');
+              gradient.addColorStop(.5, 'cyan');
+              gradient.addColorStop(1, 'blue');
+
+              return gradient;
+            },
             lineTension: 0.4,
             pointRadius: 1,
             pointHoverRadius: 1,
