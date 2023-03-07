@@ -1,5 +1,97 @@
 <script>
+import Chart from 'chart.js/auto/auto.mjs';
 
+
+
+export default {
+    data() {
+        return {
+          config1: {
+        type: 'line',
+        data: {
+          labels: ["18-24","25-34","35-44","45-54","55-64","65+"],
+          datasets: [{
+            label: 'Totaal Meldingen',
+            data: [5,18,13,22,3,12],
+            // backgroundColor: (ctx) => {
+            //   const canvas = ctx.chart.ctx;
+            //   const gradient = canvas.createLinearGradient(0,1200,0,0);
+
+            //   gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
+            //   gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
+
+            //   return gradient;
+            // },
+            lineTension: 0.4,
+            pointRadius: 1,
+            pointHoverRadius: 1,
+            fill: false,
+            redraw: true,
+            borderColor: [
+              'rgb(0 82 254)',
+
+            ],
+            borderWidth: 2
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              display: true
+            },
+            ticks: {
+              display: false
+            }
+          },
+
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              position: 'nearest',
+              padding: 10,
+              cornerRadius: 10,
+              backgroundColor: 'rgba(43,88,133)',
+              callbacks: {
+                label: function (context) {
+                  return context.parsed.y;
+                },
+                title: () => null
+              },
+
+              yAlign: 'bottom',
+              displayColors: false,
+
+            }
+          }
+        }
+      },
+      myChart2: null,
+        }
+    },
+    mounted() {
+
+        this.ChartRender();
+    },
+methods: {
+        ChartRender() {
+      if (this.myChart2 != null) {
+        this.myChart2.destroy();
+      }
+      this.myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        this.config1
+      );
+
+    },
+    }
+}
 </script>
 <template>
         <section class="bg-[#ffffff] w-full p-4 md:p-12">
@@ -17,8 +109,10 @@
                             <li class="text-[#6C7A93] text-base font-normal leading-7 ">There is a growing trend visible in search behavior for offers due to rising prices and a declining purchasing power.</li>
                         </ul>
                 </div>
-                <div class="chart-area my-8">
-
+                <div class="chart-wrapper my-8">
+                    <div ref="aanbiending24" class="">
+                        <canvas id="myChart2" width="400" height="400"></canvas>
+                    </div>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-inner p-6 md:p-16">

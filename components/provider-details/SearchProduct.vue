@@ -683,7 +683,7 @@ export default {
     </div>
 </div>
 
-    <!-- subscrition start -->
+    <!-- subscription start -->
 
     <div class="subscription-area p-10 text-center">
     <div class="inner-area-subs">

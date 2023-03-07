@@ -6,6 +6,102 @@ const name = computed (() => {
 });
 
 </script>
+<script>
+import Chart from 'chart.js/auto/auto.mjs';
+
+
+
+export default {
+    data() {
+        return {
+          config1: {
+        type: 'line',
+
+        data: {
+          labels: ["Feb 1","Feb 2","Feb 3","Feb 4","Feb 5","Feb 6","Feb 7",],
+          datasets: [{
+            label: 'Totaal Meldingen',
+            data: [290,250,300,250,280,335,355],
+            backgroundColor: (ctx) => {
+              const canvas = ctx.chart.ctx;
+              const gradient = canvas.createLinearGradient(0,1200,0,0);
+
+              gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
+              gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
+
+              return gradient;
+            },
+            lineTension: 0,
+            pointRadius: 1,
+            pointHoverRadius: 1,
+            fill: true,
+            redraw: true,
+            borderColor: [
+              'rgb(0 82 254)',
+
+            ],
+            borderWidth: 2
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              display: true
+            },
+            ticks: {
+              display: false
+            }
+          },
+
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              position: 'nearest',
+              padding: 10,
+              cornerRadius: 10,
+              backgroundColor: 'rgba(43,88,133)',
+              callbacks: {
+                label: function (context) {
+                  return context.parsed.y;
+                },
+                title: () => null
+              },
+
+              yAlign: 'bottom',
+              displayColors: false,
+
+            }
+          }
+        }
+      },
+      myChart3: null,
+        }
+    },
+    mounted() {
+
+        this.ChartRender();
+    },
+methods: {
+        ChartRender() {
+      if (this.myChart3 != null) {
+        this.myChart3.destroy();
+      }
+      this.myChart3 = new Chart(
+        document.getElementById('myChart3'),
+        this.config1
+      );
+
+    },
+    }
+}
+</script>
 <template>
         <section class="bg-white w-full p-4 md:p-12">
             <div class="container mx-auto max-w-screen-xl"><!-- container start -->                
@@ -530,9 +626,14 @@ This way, your online gaming session will not be interrupted by Wi-Fi failure. W
                 <!-- Product price notification Start -->
 
                 <div class="product-price-notification my-8 md:mt-16">
-                    <div class="flex">
-                        <div class="chart">                            
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="chart w-full">                            
                             <h5 class="text-black text-2xl font-bold mb-4 md:mb-10">Price History</h5>
+                            <div class="chart-wrapper">
+                                <div ref="aanbiending24" class="">
+                                    <canvas id="myChart3" width="400" height="400"></canvas>
+                                </div>
+                            </div>
                         </div>
                         <div class="notification-form">
                             <h5 class="text-black text-2xl font-bold">Get a Price Notification</h5>

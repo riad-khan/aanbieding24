@@ -12,14 +12,13 @@ export default {
           labels: ["Feb 1","Feb 2","Feb 3","Feb 4","Feb 5","Feb 6","Feb 7",],
           datasets: [{
             label: 'Totaal Meldingen',
-            data: [200,250,350,300,250,350,200],
+            data: [290,250,300,250,280,335,355],
             backgroundColor: (ctx) => {
               const canvas = ctx.chart.ctx;
-              const gradient = canvas.createLinearGradient(0,0,0,160);
+              const gradient = canvas.createLinearGradient(0,1200,0,0);
 
-              gradient.addColorStop(1, 'blue');
-              gradient.addColorStop(.5, 'cyan');
-              gradient.addColorStop(1, 'blue');
+              gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
+              gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
 
               return gradient;
             },
@@ -172,7 +171,7 @@ import { onMounted } from 'vue'
                               </button>
                           </div>
                           <!-- Modal body -->
-                          <div class="p-6 space-y-6">
+                          <div class="p-6 space-y-6 modal-body">
                               <div class="modal-product-info flex-col flex md:flex-row align-middle justify-between">
                                   <div class="img-box flex justify-center items-center relative h-[165px] w-full md:w-[273px] bg-[#F5F8FF]">
                                       <div class="product-img p-8">
@@ -318,11 +317,6 @@ import { onMounted } from 'vue'
                                       <canvas id="myChart1" width="400" height="400"></canvas>
                                   </div>
                               </div>
-                          </div>
-                          <!-- Modal footer -->
-                          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                              <button type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600">Decline</button>
                           </div>
                       </div>
                   </div>
