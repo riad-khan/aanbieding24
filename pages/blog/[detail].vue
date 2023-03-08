@@ -8,9 +8,74 @@ const detail = computed (() => {
 </script>
 <script>
 
+export default {
+    mounted(){
+          
+        const accordions = document.querySelectorAll(".accordion");
+
+const openAccordion = (accordion) => {
+	const content = accordion.querySelector(".accordion__content");
+	accordion.classList.add("accordion__active");
+	content.style.maxHeight = content.scrollHeight + "px";
+};
+
+const closeAccordion = (accordion) => {
+	const content = accordion.querySelector(".accordion__content");
+	accordion.classList.remove("accordion__active");
+	content.style.maxHeight = null;
+};
+
+accordions.forEach((accordion) => {
+	const intro = accordion.querySelector(".accordion__intro");
+	const content = accordion.querySelector(".accordion__content");
+
+	intro.onclick = () => {
+		if (content.style.maxHeight) {
+			closeAccordion(accordion);
+		} else {
+			accordions.forEach((accordion) => closeAccordion(accordion));
+			openAccordion(accordion);
+		}
+	};
+});
+        
+  },
+    method: {
+       
+
+        
+    
+    }
+    
+}
 </script>
 <style>
-
+.accordion {
+  width: 100%;
+  overflow: hidden;
+}
+.accordion__intro {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.25s ease-out;
+  color: #2B313B;
+  opacity: 1;
+}
+.accordion h4,
+.accordion a {
+  color: #2B313B;
+  font-weight: 400;
+  font-size: 14px;
+}
+.accordion.accordion__active .button svg {
+    transform: rotate(180deg);
+}
 </style>
 <template>
         <section class="bg-white w-full p-4 md:p-12">
@@ -20,8 +85,8 @@ const detail = computed (() => {
                         
                         <img class="rounded-[5px] my-3" src="@/assets/img/articales/single-post/03.jpg" alt="image">
                       
-                        <h1 class="font-bold text-[32px] text-[#2B313B] leading-none mb-6">{{ detail }}</h1>
-                        <div class="post-info flex-none md:flex md:justify-between">
+                        <h1 class="font-bold text text-[32px] text-[#2B313B] leading-none mb-6">{{ detail }}</h1>
+                        <div class="post-info flex +justify-between">
                             <span class="publish-date-time  text-[#6C7A93] font-normal text-xs">Jul 25, 2022 • Read: 5
                                 min</span>
 
@@ -35,8 +100,33 @@ const detail = computed (() => {
                                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img class="h-5 w-5" src="@/assets/img/social/instagram24.svg" alt=""></span> </a></li>
                                     <li class="flex ml-2"><a href="#" class=" ml-2"><img class="blob infinity rounded-full h-5 w-5" src="@/assets/img/social/youtube24.svg" alt=""> </a></li>
                                 </ul>
-                             </span>   
+                             </span>  
                         </div>
+                        
+                        <div class="accordion mb-3 border block md:hidden rounded-[5px] border-[#F5F8FF]">
+                                <div class="accordion">
+                                    <div class="accordion__intro">                                    
+                                        <div class="button flex items-center justify-between w-full text-left text-[#2B313B] cursor-pointer">
+                                            <span class="font-semibold text-2xl">Table of contents</span>
+                                            <svg class="arrow-icon fill-current text-[#2B313B] h-7 w-7 md:h-7 md:w-7 transform transition-transform duration-500 rotate-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <ul>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">Black Friday discounts up to 250 euros at Rowenta</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">The best Black Friday promotions of 2022 from Tefal</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">Black Friday deals at VitalFarma</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">World Cup 2022 starts on Sunday: These are the best</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Option discount at Welkoop until 30 October</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">The best 65 inch TV deals of October 2022</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Slow cooker: What is it and what are its benefits?</a></li>
+                                            <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Black Friday comes early: VPN offer with 59% discount at NordVPN</a></li>
+                                        </ul>
+                                    </div>
+                                </div>               
+                            </div> 
                         <p class="text-[#2B313B] font-normal text-xs mb-6 leading-6">On Black Friday you can go to Rowenta for various offers. Think of discounts of up to € 250 on, for example, robot vacuum cleaners, stick vacuum cleaners, air purifiers and more. If you're looking for a new vacuum cleaner, air purifier, or other household appliance, now is the time to make your purchase. </p>
                         <p>
                             Rowenta has different types of vacuum cleaners, so there is always a model that suits your household. For example, the stick vacuum cleaners are ideal for people with a large house, while the robot vacuum cleaners are perfect for people who have little time to vacuum. Even if you suffer from allergies, an air purifier is a good purchase. In short, there is something for everyone at Rowenta on Black Friday.
@@ -105,11 +195,32 @@ With a range of 11 meters and a dust bag of 4.5 liters, the Rowenta Silence Forc
                 </div>
                 <div class="side-bar basis-full md:basis-2/5 lg:w-[392px]">
                     <div class="inner-area ml-0 lg:ml-4 p-2 md:p-0">
-                        <div class="accordion mb-3">
-                                                  
+                        <div class="accordion hidden md:block mb-3 border rounded-[5px] border-[#F5F8FF]">
+                            <div class="accordion">
+                                <div class="accordion__intro">                                    
+                                    <div class="button flex items-center justify-between w-full text-left text-[#2B313B] cursor-pointer">
+                                        <span class="font-semibold text-2xl">Table of contents</span>
+                                        <svg class="arrow-icon fill-current text-[#2B313B] h-7 w-7 md:h-7 md:w-7 transform transition-transform duration-500 rotate-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="accordion__content">
+                                    <ul>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">Black Friday discounts up to 250 euros at Rowenta</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">The best Black Friday promotions of 2022 from Tefal</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all border-b border-[#F5F8FF] p-4">Black Friday deals at VitalFarma</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">World Cup 2022 starts on Sunday: These are the best</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Option discount at Welkoop until 30 October</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">The best 65 inch TV deals of October 2022</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Slow cooker: What is it and what are its benefits?</a></li>
+                                        <li><a href="#" class="block w-full font-normal text-sm text-[#2B313B] hover:text-[#0052fe] transition-all p-4">Black Friday comes early: VPN offer with 59% discount at NordVPN</a></li>
+                                    </ul>
+                                </div>
+                            </div>               
                         </div>
                         <div class="articles mb-3 border-l border-t rounded-t-[5px] border-r border-[#F5F8FF]">
-                            <h3 class="p-6 border-t border-b border-[#F5F8FF] mx-auto md:text-base lg:text-2xl text-xl text-[#2B313B] font-bold">
+                            <h3 class="p-6 border-t border-b border-[#F5F8FF] mx-auto md:text-base lg:text-2xl text-2xl text-[#2B313B] font-bold">
                                 Hot News</h3>
                             <a href="#" class="flex px-3 items-center justify-between align-middle transition-all opacity-100 border-b border-[#F5F8FF] hover:opacity-90 bg-white py-2.5">
                                 <span class="fixed-size overflow-hidden w-[97px] h-[78px] rounded-[5px] ">

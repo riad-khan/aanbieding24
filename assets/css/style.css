@@ -1236,9 +1236,9 @@ label.outline-btn.btn-translate-z {
 .items-end {
     text-align: right;
 }
-.faq h3, .faq h4, .faq h4 span, .articles h3, .side-bar h3, .cal-options h3, .faq div {
+/* .faq h3, .faq h4, .faq h4 span, .articles h3, .side-bar h3, .cal-options h3, .faq div {
     font-size: 16px;
-}
+} */
 /* Coder Start */
 .mega-menu-wrapper {visibility: hidden;transform: translateY(5px);opacity: 0;transition: 250ms;}
 

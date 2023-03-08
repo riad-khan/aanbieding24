@@ -26,7 +26,6 @@ export default {
               const canvas = ctx.chart.ctx;
               const gradient = canvas.createLinearGradient(0,1200,0,0);
 
-              gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
               gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
 
               return gradient;
@@ -626,8 +625,8 @@ This way, your online gaming session will not be interrupted by Wi-Fi failure. W
                 <!-- Product price notification Start -->
 
                 <div class="product-price-notification my-8 md:mt-16">
-                    <div class="flex flex-col md:flex-row items-center justify-between">
-                        <div class="chart w-full">                            
+                    <div class="flex-none md:flex md:flex-row">
+                        <div class="chart basis-full p-2 md:p-3 lg:p-0 md:basis-3/5 lg:w-[668px]">                            
                             <h5 class="text-black text-2xl font-bold mb-4 md:mb-10">Price History</h5>
                             <div class="chart-wrapper">
                                 <div ref="aanbiending24" class="">
@@ -635,9 +634,9 @@ This way, your online gaming session will not be interrupted by Wi-Fi failure. W
                                 </div>
                             </div>
                         </div>
-                        <div class="notification-form">
-                            <h5 class="text-black text-2xl font-bold">Get a Price Notification</h5>
-                            <div class="form-area-a p-6 rounded-[5px] border border-[#F5F8FF] bg-white w-full md:w-[392px]">
+                        <div class="notification-form side-bar basis-full md:basis-2/5 lg:w-[392px]">
+                            <h5 class="text-black text-2xl font-bold mb-4 md:mb-10">Get a Price Notification</h5>
+                            <div class="form-area-a p-6 rounded-[5px] border border-[#F5F8FF] bg-white">
                             <form action="https://bereken.webonedevs.com/internet-package" method="post" class="flex flex-col">
                                 <input type="hidden" name="_token" value="">                                
                                 <div class="mb-3">
