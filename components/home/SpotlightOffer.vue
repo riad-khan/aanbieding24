@@ -82,6 +82,9 @@
 .spotlight-offer-area .swiper-button-next:hover:after {
     color: #112954;
 }
+.offer-img img {
+    float: right;
+}
 </style>
 <template>
     <div class="spotlight-offer-area">
@@ -90,7 +93,7 @@
                 <div class="product-offer-detail flex items-center justify-between mb-2">
                     <span class="font-normal text-sm text-[#F22222]">Summer sale up to 50%</span><span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Computer & Laptop</span>
                 </div>
-                <div class="grid grid-cols-3">
+                <div class="grid grid-cols-3 z-10 relative">
                     <div class="offer-details col-span-2">
                         <h5 class="text-[#2B313B] text-[40px] font-black mb-4 leading-none">Apple Bundle New Series</h5>
                         <p class="text-[#6C7A93] text-sm font-normal mb-4 w-[245px]">Real offers with high discounts up to 30% discount on Apple Product</p>
@@ -99,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="offer-img">
+                <div class="offer-img z-[1] w-auto md:w-3/5 m-0">
                     <img src="@/assets/img/offers/computer.png" alt="image">
                 </div>
             </div>

@@ -11,6 +11,39 @@ const toggleClass = () => {
 
 
 </script>
+<script>
+
+export default {
+   
+    methods: {
+        
+        goBack(){
+            const backBtn = document.querySelector('.back-ul');
+
+            backBtn.classList.add("opacity-0");
+            backBtn.classList.add("hidden");
+        },
+        showSubMenu() {
+            const backBtn = document.querySelector('.back-ul');
+            
+            backBtn.classList.remove("opacity-0");
+            backBtn.classList.remove("hidden");
+        }
+    }
+   
+}
+
+</script>
+<style>
+.mega-menu-full-dropdown-button li.menu-item:hover button svg path {
+    fill: unset;
+}
+
+.mega-menu-full-dropdown-button li.menu-item:hover button svg {
+    margin-right: 5px;
+    display: block;
+}
+</style>
 <template>
     <!-- header start -->
     <header>
@@ -60,7 +93,7 @@ const toggleClass = () => {
 </svg>
  Computer & tablets</a>
                                 </li>
-                                <li class="menu-item dropdown">
+                                <li class="menu-item dropdown" @mouseover="showSubMenu">
                                     <a href="#" class="flex items-center text-sm font-bold text-[#253F73] px-4 py-3 transition"><svg  width="20" height="18" class="h-5 w-5 mr-2" viewBox="0 0 20 18" fill="none">
 
 <path class="st0" d="M1.2,1h16.3c0.2,0,0.3,0.1,0.4,0.2c0.1,0.1,0.2,0.3,0.2,0.4v12.6c0,0.2-0.1,0.3-0.2,0.4
@@ -78,7 +111,14 @@ const toggleClass = () => {
 	C4,4.5,4,4.7,4,5C4,5.2,4,5.4,4.1,5.6C4.3,5.7,4.4,5.9,4.6,6C4.8,6.1,5.1,6.1,5.3,6c0.2,0,0.4-0.2,0.6-0.3C5.9,5.6,6,5.5,6.1,5.4
 	C6.1,5.2,6.1,5.1,6.1,5c0-0.1,0-0.3-0.1-0.4C6,4.4,5.9,4.3,5.8,4.2z" fill="#253F73"/>
 </svg> Image & sound</a>
-                                    <ul class="sub-menu">
+                                    <ul class="sub-menu back-ul">
+                                        <li>
+                                            <button type="button" @click="goBack" class="back-btn text-[#000000] text-sm font-bold flex items-center md:hidden p-4"><svg width="20" height="20" viewBox="0 0 20 20" fill="#2B313B" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 16.7071C9.31658 17.0976 8.68342 17.0976 8.29289 16.7071L2.29289 10.7071C1.90237 10.3166 1.90237 9.68342 2.29289 9.29289L8.29289 3.29289C8.68342 2.90237 9.31658 2.90237 9.70711 3.29289C10.0976 3.68342 10.0976 4.31658 9.70711 4.70711L5.41421 9H17C17.5523 9 18 9.44772 18 10C18 10.5523 17.5523 11 17 11L5.41421 11L9.70711 15.2929C10.0976 15.6834 10.0976 16.3166 9.70711 16.7071Z" fill="#2B313B"/>
+</svg>
+ back
+</button>
+                                        </li>
                                         <li class="sub-menu-item">
                                             <a href="" class="flex items-center text-sm font-bold text-[#253F73] px-4 py-3 transition">Televisions & beamers</a>
                                         </li>
@@ -196,6 +236,12 @@ const toggleClass = () => {
 </svg>
  Supermarket</a>
                                     <ul class="sub-menu">
+                                        <li>
+                                            <button type="button" class="back-btn text-[#000000] text-sm font-bold flex items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="mr-2" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 16.7071C9.31658 17.0976 8.68342 17.0976 8.29289 16.7071L2.29289 10.7071C1.90237 10.3166 1.90237 9.68342 2.29289 9.29289L8.29289 3.29289C8.68342 2.90237 9.31658 2.90237 9.70711 3.29289C10.0976 3.68342 10.0976 4.31658 9.70711 4.70711L5.41421 9H17C17.5523 9 18 9.44772 18 10C18 10.5523 17.5523 11 17 11L5.41421 11L9.70711 15.2929C10.0976 15.6834 10.0976 16.3166 9.70711 16.7071Z" fill="#2B313B"/>
+</svg> back
+</button>
+                                        </li>
                                         <li class="sub-menu-item">
                                             <a href="" class="flex items-center text-sm font-bold text-[#253F73] px-4 py-3 transition">Televisions & beamers</a>
                                         </li>

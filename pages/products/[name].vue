@@ -6,6 +6,7 @@ const name = computed (() => {
 });
 
 </script>
+
 <script>
 import Chart from 'chart.js/auto/auto.mjs';
 
@@ -43,6 +44,8 @@ export default {
           }]
         },
         options: {
+          responsive: true,
+          maintainAspectRatio: false,
           scales: {
             y: {
               display: true
@@ -86,6 +89,44 @@ export default {
     mounted() {
 
         this.ChartRender();
+                /* custom selectors News Start */
+                let index = 1;
+
+const on = (listener, query, fn) => {
+    document.querySelectorAll(query).forEach(item => {
+        item.addEventListener(listener, el => {
+            fn(el);
+        })
+    })
+}
+
+on('click', '.selectBtn', item => {
+    item.target.classList.toggle('toggle');
+    const next = item.target.nextElementSibling;
+    next.classList.toggle('toggle');
+    next.style.zIndex = index++;
+});
+
+document.addEventListener('mouseup', function (e) {
+
+    const containers = document.querySelectorAll('.selectBtn');
+    if (containers.length > 0) {
+        const options = document.querySelectorAll('.selectDropdown');
+        containers.forEach(function (container, index) {
+            if (!container.contains(e.target)) {
+                container.classList.remove('toggle');
+                options[index].classList.remove('toggle');
+            }
+        });
+
+    }
+});
+on('click', '.option', item => {
+    item.target.parentElement.classList.remove('toggle');
+    const parent = item.target.closest('.select').children[0];
+    parent.setAttribute('data-type', item.target.getAttribute('data-type'));
+    parent.innerText = item.target.innerText;
+})
     },
 methods: {
         ChartRender() {
@@ -101,6 +142,19 @@ methods: {
     }
 }
 </script>
+<style scoped>
+.chart-wrapper canvas {
+    height: 400px!important;
+}
+.chart-wrapper {
+    border: 1px solid #F5F8FF;
+    padding: 20px;
+    border-radius: 5px;
+}
+.select .selectBtn, .select .select-b, .select .select-c, .select .select-d {
+    border-color: #6C7A93;
+}
+</style>
 <template>
         <section class="bg-white w-full p-4 md:p-12">
             <div class="container mx-auto max-w-screen-xl"><!-- container start -->                
@@ -567,7 +621,7 @@ methods: {
                 <!-- Product description start -->
 
                 <div class="product-description-wrapper my-8 md:mt-16">
-                    <div class="grid grid-cols-2 gap-12">
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
                         <div class="product-detail-text">
                             <h5 class="font-bold text-[#2B313B] text-2xl mb-4">Product description</h5>
                             <p class="text-[#6C7A93] text-base font-normal leading-6 mb-5">Experience Nintendo games with nintendo switch OLED on a bigger screen with even more intense colors. The 7-inch OLED screen is larger than that of the regular Switch. With OLED, the colors appear richer and the contrast on the screen is higher. Plus, the Nintendo Switch OLED has a wide, adjustable stand that allows you to easily place the console on a table or desk. The Switch OLED also has a new mount with a LAN connection for a stable online experience.</p>
@@ -610,10 +664,10 @@ This way, your online gaming session will not be interrupted by Wi-Fi failure. W
                                     </tbody>
                                 </table>
                                 <a href="" class="text-[#0052FE] text-sm font-bold flex items-center justify-center my-3">Show More<svg width="16" height="16" viewBox="0 0 16 16" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4.23431 5.83441C4.54673 5.52199 5.05327 5.52199 5.36569 5.83441L8 8.46873L10.6343 5.83441C10.9467 5.52199 11.4533 5.52199 11.7657 5.83441C12.0781 6.14683 12.0781 6.65336 11.7657 6.96578L8.56569 10.1658C8.25327 10.4782 7.74673 10.4782 7.43431 10.1658L4.23431 6.96578C3.9219 6.65336 3.9219 6.14683 4.23431 5.83441Z" fill="#0052FE"/>
-</svg>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23431 5.83441C4.54673 5.52199 5.05327 5.52199 5.36569 5.83441L8 8.46873L10.6343 5.83441C10.9467 5.52199 11.4533 5.52199 11.7657 5.83441C12.0781 6.14683 12.0781 6.65336 11.7657 6.96578L8.56569 10.1658C8.25327 10.4782 7.74673 10.4782 7.43431 10.1658L4.23431 6.96578C3.9219 6.65336 3.9219 6.14683 4.23431 5.83441Z" fill="#0052FE"/>
+                                </svg>
 
-</a>
+                                </a>
                             </div>
                         </div>
 
@@ -629,8 +683,45 @@ This way, your online gaming session will not be interrupted by Wi-Fi failure. W
                         <div class="chart basis-full p-2 md:p-3 lg:p-0 md:basis-3/5 lg:w-[668px]">                            
                             <h5 class="text-black text-2xl font-bold mb-4 md:mb-10">Price History</h5>
                             <div class="chart-wrapper">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="chart-info">
+                                        <div class="text-[#6C7A93] text-xs font-normal">Current Price</div>
+                                        <div class="text-[#2B313B] text-2xl font-bold flex items-center">$250
+                                            <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs ml-4"><img src="@/assets/img/icons/sell-arrow-green.svg" class=" mr-1 w-4 h-4" alt="icon"> -24%</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <form action="" class="text-left w-28">
+                                            <div class="mr-4">
+                                                <div class="no-label w-28">
+                                                    <div class="select" id="provider">
+                                                        <div class="selectBtn" data-type="firstOption"> 7 Days</div>
+                                                        <div class="selectDropdown">
+                                                            <div class="option" data-value="all" data-type="firstOption">6 Days</div>
+                                                            <div class="option" data-type="secondOption" data-value="internet-tv">
+                                                                5 Days
+                                                            </div>
+                                                            <div class="option" data-type="secondOption" data-value="internet-bellen">
+                                                                4 Days
+                                                            </div>
+                                                            <div class="option" data-type="secondOption" data-value="internet">
+                                                                3 Days
+                                                            </div>
+                                                            <div class="option" data-type="secondOption" data-value="internet">
+                                                                2 Days
+                                                            </div>
+                                                            <div class="option" data-type="secondOption" data-value="internet">
+                                                                1 Days
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <div ref="aanbiending24" class="">
-                                    <canvas id="myChart3" width="400" height="400"></canvas>
+                                    <canvas id="myChart3" height="400"></canvas>
                                 </div>
                             </div>
                         </div>

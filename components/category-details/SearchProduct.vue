@@ -17,8 +17,8 @@ export default {
               const canvas = ctx.chart.ctx;
               const gradient = canvas.createLinearGradient(0,1200,0,0);
 
-              gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
-              gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
+              gradient.addColorStop(1, 'rgb(0 82 254 / 45%)');
+              gradient.addColorStop(.5, 'rgb(0 82 254 / 10%)');
 
               return gradient;
             },
@@ -35,6 +35,8 @@ export default {
           }]
         },
         options: {
+          responsive: true,
+          maintainAspectRatio: false,
           scales: {
             y: {
               display: true
@@ -121,20 +123,20 @@ export default {
     },
     methods: {
         ChartRender() {
-      if (this.myChart1 != null) {
-        this.myChart1.destroy();
-      }
-      this.myChart1 = new Chart(
-        document.getElementById('myChart1'),
-        this.config1
-      );
+        if (this.myChart1 != null) {
+            this.myChart1.destroy();
+        }
+        this.myChart1 = new Chart(
+            document.getElementById('myChart1'),
+            this.config1
+        );
 
-    },
+        },
     }
 }
 </script>
 <script setup>
-import { onMounted } from 'vue'
+    import { onMounted } from 'vue'
     import { Modal } from 'flowbite'
 
     // initialize components based on data attribute selectors
@@ -157,6 +159,30 @@ import { onMounted } from 'vue'
     }
 })
 </script>
+<style scoped>
+.chart-wrapper canvas {
+    height: 260px!important;
+}
+.chart-wrapper {
+    border: 1px solid #F5F8FF;
+    padding: 20px;
+    border-radius: 5px;
+}
+.chart-btn a {
+    padding: 1px 16px;
+    border: 1px solid #6C7A93;
+    margin-left: 5px;
+    border-radius: 15px;
+    transition: 250ms;
+}
+.chart-btn a:hover, .chart-btn a.active-chart {
+    color: #0052FE;
+    border-color: #0052FE;
+}
+.chart-wrapper {
+    margin-top: 0!important;
+}
+</style>
 <template>
     
     <div id="large-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full  p-8 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
@@ -312,7 +338,21 @@ import { onMounted } from 'vue'
                                         </div>
                                   </div>
                               </div>
-                              <div class="chart-wrapper">
+                              <div class="chart-wrapper mt-0 hidden md:block">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="chart-info">
+                                        <div class="text-[#6C7A93] text-xs font-normal">Current Price</div>
+                                        <div class="text-[#0052FE] text-xl font-bold flex items-center">$250 - $270
+                                            <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs ml-4"><img src="@/assets/img/icons/sell-arrow-green.svg" class=" mr-1 w-4 h-4" alt="icon"> -24%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center chart-btn">
+                                        <a href="" class="text-[#6C7A93] text-sm font-normal">1D</a>
+                                        <a href="" class="active-chart text-[#6C7A93] text-sm font-normal">1W</a>
+                                        <a href="" class="text-[#6C7A93] text-sm font-normal">1M</a>
+                                        <a href="" class="text-[#6C7A93] text-sm font-normal">1Y</a>
+                                    </div>
+                                </div>
                                   <div ref="aanbiending24" class="">
                                       <canvas id="myChart1" width="400" height="400"></canvas>
                                   </div>
@@ -326,9 +366,9 @@ import { onMounted } from 'vue'
         <p class="tag-line text-[#6C7A93] text-sm font-normal mb-6">View all Loungeset Products</p>
         <div class="filter-wrapper flex flex-col lg:flex-row items-start lg:items-center justify-between">
             <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full lg:w-auto">
-                <div class="flex items-center justify-between w-full lg:w-auto">
-                    <form action="" class="text-left w-full lg:w-auto">
-                        <div class="mr-4">
+                <div class="flex items-center justify-between w-full lg:w-auto mr-0 lg:mr-4">
+                    <form action="" class="text-left w-full lg:w-auto mr-4">
+                        <div class="">
                             <div class="no-label w-full lg:w-28">
                                 <div class="select" id="popular">
                                     <div class="selectBtn filter-icon" data-type="firstOption"> Popular</div>
@@ -372,8 +412,8 @@ import { onMounted } from 'vue'
                     </form>
                 </div>
                 <div class="flex items-center justify-between w-full lg:w-auto mt-3 lg:mt-0">
-                    <form action="" class="text-left w-full lg:w-28">
-                        <div class="mr-4">
+                    <form action="" class="text-left w-full lg:w-28  mr-4">
+                        <div class="">
                             <div class="no-label w-full lg:w-28">
                                 <div class="select" id="provider">
                                     <div class="selectBtn" data-type="firstOption"> Provider</div>

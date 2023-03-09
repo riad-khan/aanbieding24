@@ -12,16 +12,7 @@ export default {
           labels: ["18-24","25-34","35-44","45-54","55-64","65+"],
           datasets: [{
             label: 'Totaal Meldingen',
-            data: [5,18,13,22,3,12],
-            // backgroundColor: (ctx) => {
-            //   const canvas = ctx.chart.ctx;
-            //   const gradient = canvas.createLinearGradient(0,1200,0,0);
-
-            //   gradient.addColorStop(1, 'rgb(0 82 254 / 95%)');
-            //   gradient.addColorStop(.5, 'rgb(0 82 254 / 20%)');
-
-            //   return gradient;
-            // },
+            data: [5,18,13,22,3,12],     
             lineTension: 0.4,
             pointRadius: 1,
             pointHoverRadius: 1,
@@ -35,6 +26,11 @@ export default {
           }]
         },
         options: {
+        layout: {
+            padding: 0            
+          },
+          responsive: true,
+          maintainAspectRatio: false,
           scales: {
             y: {
               display: true
@@ -93,6 +89,12 @@ methods: {
     }
 }
 </script>
+<style scoped>
+.chart-wrapper canvas {
+    height: 280px!important;
+}
+
+</style>
 <template>
         <section class="bg-[#ffffff] w-full p-4 md:p-12">
             <div class="container mx-auto max-w-[805px]"><!-- container start -->
@@ -111,7 +113,7 @@ methods: {
                 </div>
                 <div class="chart-wrapper my-8">
                     <div ref="aanbiending24" class="">
-                        <canvas id="myChart2" width="400" height="400"></canvas>
+                        <canvas id="myChart2" height="280"></canvas>
                     </div>
                 </div>
                 <div class="form-wrapper">

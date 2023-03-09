@@ -67,7 +67,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex  w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -122,7 +122,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex  w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -178,7 +178,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex  w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -233,7 +233,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex  w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -288,7 +288,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -343,7 +343,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -398,8 +398,7 @@
             </swiper-slide>
             <swiper-slide>
                 <div class="items">
-                    <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#"  class="flex w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
@@ -454,7 +453,7 @@
             <swiper-slide>
                 <div class="items">
                     <a href="#"
-                        class="flex w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                        class="flex  w-auto lg:w-[255px] mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto"
