@@ -16,9 +16,9 @@
                         <h3 class="text-[#2B313B] text-xl font-bold mb-4">How do you make money from the website?</h3>
                         <p class="text-[#6C7A93] text-base font-normal leading-7 mb-8">From certain webshops we get a fee (commission) when you make a purchase via Actuele-Aanbiedingen.nl. This income we use it to further develop the website. It also allows us to invest more time to collect and structure all offers in the Netherlands, what the consumer ultimately Helps. The webshops from which we receive compensation when a purchase is made via our website is done are:</p>
 
-                        <div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+                        <div class="grid grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
                             <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Bol.com</li>
                                     <li>MediaMarkt</li>
                                     <li>Amazon.nl</li>
@@ -32,7 +32,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Expert</li>
                                     <li>Bettersports</li>
                                     <li>Praxis</li>
@@ -46,7 +46,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Albert Heijn</li>
                                     <li>Gall & Gall</li>
                                     <li>Ep</li>
@@ -60,7 +60,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Backpacking gear</li>
                                     <li>Coffee comparison</li>
                                     <li>YourMacstore</li>
@@ -74,7 +74,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Fitwinkel.nl</li>
                                     <li>Toppy</li>
                                     <li>Yorcom</li>
@@ -88,7 +88,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Discount drugstore</li>
                                     <li>Remarkt</li>
                                     <li>Refurbished.nl</li>
@@ -102,7 +102,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Simple</li>
                                     <li>Tele2</li>
                                     <li>Beamer expert</li>
@@ -116,7 +116,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Huus</li>
                                     <li>furniture stunt</li>
                                     <li>Jumbo</li>
@@ -130,7 +130,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Luggage online</li>
                                     <li>Travelbags |</li>
                                     <li>Kamado Express</li>
@@ -144,7 +144,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Holland & Barrett</li>
                                     <li>K.K.</li>
                                     <li>deverfwebshop.nl</li>
@@ -158,7 +158,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>Hema Hotels</li>
                                     <li>Horloge.nl</li>
                                     <li>Wine advantage</li>
@@ -172,7 +172,7 @@
                                 </ul>
                             </div>
                              <div class="list-s">
-                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-8">
+                                <ul class="text-[#0052FE] text-base font-normal leading-7 list-disc pl-4 mb-0 md:mb-8">
                                     <li>CameraNU</li>
                                     <li>Verf.nl</li>
                                     <li>Art & Craft</li>

@@ -47,10 +47,10 @@ methods:{
     <!-- footer start -->
     <footer class="p-4 md:p-12 bg-white sm:p-6">
         <div class="container mx-auto max-w-screen-xl">
-            <div class="md:flex md:flex-row md:justify-between flex-none">
-                <div class="mb-6 md:mb-0 md:basis-1/3 basis-full">
-                    <a href="#" class="flex items-center">
-                        <img src="@/assets/img/full-logo.svg" class="mr-3  w-40 h-9" alt="FlowBite Logo" />
+            <div class="flex md:flex-row justify-center md:justify-between flex-col">
+                <div class="mb-6 md:mb-0 md:basis-1/3 basis-full mx-auto md:mx-0 w-full text-center md:text-left">
+                    <a href="#" class="flex justify-center md:justify-start items-center md:text-left">
+                        <img src="@/assets/img/full-logo.svg" class="w-40 h-9  mx-auto md:mx-0" alt="FlowBite Logo" />
                     </a>
                     <p class="sm:space-y-6 py-2 sm:py-8 text-xs font-normal leading-5 text-[#6C7A93] sm:pr-9">
                         Aanbieding24 helps thousands consumers per day at the finding the best offers and the lowest prices. Completely independent and free to use. Our vision is to get to the starting point.

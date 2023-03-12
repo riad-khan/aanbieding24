@@ -209,7 +209,7 @@ export default {
                                       </div>
                                   </div>
                                   <div class="product-details-s w-full pl-5">
-                                      <h3 class="text-[#2B313B] font-bold text-xl mb-3">K380 MULTI-DEVICE KEYBOARD FOR MAC</h3>
+                                      <h3 class="text-[#2B313B] font-bold text-xl mt-3 md:mt-0 mb-3">K380 MULTI-DEVICE KEYBOARD FOR MAC</h3>
                                       <div class="rating-area flex align-middle justify-start mb-5">
                                           <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.13024 0.533005C8.51342 -0.142371 9.48658 -0.142372 9.86976 0.533003L11.9616 4.22001C12.1041 4.47108 12.3481 4.64834 12.6308 4.70623L16.7838 5.55636C17.5445 5.71208 17.8453 6.63762 17.3214 7.21075L14.4612 10.3396C14.2665 10.5526 14.1733 10.8394 14.2056 11.1263L14.6804 15.3387C14.7674 16.1103 13.9801 16.6823 13.2731 16.3612L9.4136 14.6079C9.15079 14.4885 8.84921 14.4885 8.5864 14.6079L4.72688 16.3612C4.0199 16.6823 3.23259 16.1103 3.31957 15.3387L3.79439 11.1263C3.82672 10.8395 3.73353 10.5526 3.53877 10.3396L0.678637 7.21075C0.154726 6.63762 0.45545 5.71208 1.21618 5.55636L5.36916 4.70623C5.65195 4.64834 5.89593 4.47108 6.03838 4.22002L8.13024 0.533005Z" fill="#EFBC21"/>
@@ -493,10 +493,10 @@ export default {
         
     </div>
 
-    <div class="center mt-7 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 justify-between">
+    <div class="center mt-7 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 justify-items-stretch">
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png"
@@ -508,23 +508,34 @@ export default {
                 </div>
                 <div class="product-info mt-2 flex items-center justify-between">
                     <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Accessories</span>
-                    <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
+                    <span class="product-status md:flex hidden  items-center text-[#1D9E54] font-normal text-xs"><img
                             src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                        class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                        class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -548,7 +559,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png"
@@ -565,16 +576,28 @@ export default {
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                    <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
+                        </div>
+                        <!-- <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span> -->
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -598,7 +621,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png"
@@ -610,23 +633,34 @@ export default {
                 </div>
                 <div class="product-info mt-2 flex items-center justify-between">
                     <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Gadget & Tablet</span>
-                    <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
+                    <span class="product-status md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img
                             src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                        class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                        class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -650,7 +684,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png"
@@ -667,16 +701,28 @@ export default {
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                    <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -698,7 +744,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png"
@@ -710,23 +756,34 @@ export default {
                 </div>
                 <div class="product-info mt-2 flex items-center justify-between">
                     <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Accessories</span>
-                    <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
+                    <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img
                             src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                        class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                        class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -750,7 +807,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png"
@@ -767,16 +824,28 @@ export default {
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                    <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -799,7 +868,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png"
@@ -811,23 +880,34 @@ export default {
                 </div>
                 <div class="product-info mt-2 flex items-center justify-between">
                     <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Gadget & Tablet</span>
-                    <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
+                    <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img
                             src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                        class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                        class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -851,7 +931,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png"
@@ -868,16 +948,28 @@ export default {
                 <div class="product-title mt-2">
                     <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                 </div>
-                <div class="product-price-info flex items-center justify-between">
-                    <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                    <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                    <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                                height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                    fill="#EFBC21" />
-                            </svg>
-                        </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
                 </div>
                 <div class="flex justify-between items-center mt-2">
                     <button
@@ -899,7 +991,7 @@ export default {
         </div>
         <div class="item">
             <a href="#"
-                class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                 <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                     <div class="product-img">
                         <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png"
@@ -911,24 +1003,35 @@ export default {
                 </div>
                 <div class="product-info mt-2 flex items-center justify-between">
                     <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Accessories</span>
-                    <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
+                    <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img
                             src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
                 <div class="product-title mt-2">
                 <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
             </div>
-            <div class="product-price-info flex items-center justify-between">
-                <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                    class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                    class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                            height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                fill="#EFBC21" />
-                        </svg>
-                    </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
-            </div>
+            <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
+                        </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
             <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -948,95 +1051,55 @@ export default {
                     </button>
                 </div>
         </a>
-    </div>
-    <div class="item">
-        <a href="#"
-            class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
-            <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
-                <div class="product-img">
-                    <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png"
-                        alt="image">
+        </div>
+        <div class="item">
+            <a href="#"
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
+                    <div class="product-img">
+                        <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png"
+                            alt="image">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="@/assets/img/providers/Rectangle897-1.png" alt="icon">
+                    </div>
                 </div>
-                <div class="brand-logo">
-                    <img src="@/assets/img/providers/Rectangle897-1.png" alt="icon">
+                <div class="product-info mt-2 flex items-center justify-between">
+                    <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Computer & Laptop</span>
+                    <!-- <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span> -->
                 </div>
-            </div>
-            <div class="product-info mt-2 flex items-center justify-between">
-                <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Computer & Laptop</span>
-                <!-- <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span> -->
-            </div>
-            <div class="product-title mt-2">
-                <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
-            </div>
-            <div class="product-price-info flex items-center justify-between">
-                <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                            height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                fill="#EFBC21" />
-                        </svg>
-                    </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
-            </div>
-            <div class="flex justify-between items-center mt-2">
-                <button
-                    class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
-                        class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                            class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
-                            type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
-                        width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
-                            fill-rule="evenodd" fill="currentColor" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
-                            fill="currentColor" />
-                    </svg>
-                </button>
-            </div>
-        </a>
-    </div>
-    <div class="item">
-        <a href="#"
-            class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
-            <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
-                <div class="product-img">
-                    <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png"
-                        alt="image">
+                <div class="product-title mt-2">
+                    <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                 </div>
-                <div class="brand-logo">
-                    <img src="@/assets/img/providers/Rectangle897-3.png" alt="icon">
-                </div>
-            </div>
-            <div class="product-info mt-2 flex items-center justify-between">
-                <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Gadget & Tablet</span>
-                <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img
-                        src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
-            </div>
-            <div class="product-title mt-2">
-                <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
-            </div>
-            <div class="product-price-info flex items-center justify-between">
-                <span class="price text-[#F22222] text-base font-black ">$350</span> <span
-                    class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span
-                    class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>
-                <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                            height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                fill="#EFBC21" />
-                        </svg>
-                    </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
-            </div>
-            <div class="flex justify-between items-center mt-2">
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <div class="flex  items-center justify-start">
+                                <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                                <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                                
+                            </div>
+                            <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                        </div>
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <span
+                            class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                            <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                        height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                            fill="#EFBC21" />
+                                    </svg>
+                            </span> 
+                            <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                            </span>
+                        </div>
+                    </div>
+                <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
                             class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
-                        <button
-                        type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
+                                type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
                             width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1048,57 +1111,132 @@ export default {
                         </svg>
                     </button>
                 </div>
-        </a>
-    </div>
-    <div class="item">
-        <a href="#"
-            class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
-            <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
-                <div class="product-img">
-                    <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png"
-                        alt="image">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
+                    <div class="product-img">
+                        <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png"
+                            alt="image">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="@/assets/img/providers/Rectangle897-3.png" alt="icon">
+                    </div>
                 </div>
-                <div class="brand-logo">
-                    <img src="@/assets/img/providers/Rectangle897-4.png" alt="icon">
+                <div class="product-info mt-2 flex items-center justify-between">
+                    <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Gadget & Tablet</span>
+                    <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img
+                            src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                 </div>
-            </div>
-            <div class="product-info mt-2 flex items-center justify-between">
-                <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Computer & Laptop</span>
-                <!-- <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span> -->
-            </div>
-            <div class="product-title mt-2">
-                <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
-            </div>
-            <div class="product-price-info flex items-center justify-between">
-                <span class="price text-[#F22222] text-base font-black ">$7289</span>
-                <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14"
-                            height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
-                                fill="#EFBC21" />
-                        </svg>
-                    </span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
-            </div>
-            <div class="flex justify-between items-center mt-2">
-                <button
-                    class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
-                        class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
-                            class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
+                <div class="product-title mt-2">
+                    <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
+                </div>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <div class="flex  items-center justify-start">
+                                <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                                <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                                
+                            </div>
+                            <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                        </div>
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <span
+                            class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                            <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                        height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                            fill="#EFBC21" />
+                                    </svg>
+                            </span> 
+                            <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                            </span>
+                        </div>
+                    </div>
+                <div class="flex justify-between items-center mt-2">
+                        <button
+                            class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                                class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                    class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
+                            <button
                             type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
-                        width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
-                            fill="#112954" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
-                            fill="#112954" />
-                    </svg></button>
-            </div>
-        </a>
+                                width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 "
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                    fill-rule="evenodd" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"
+                class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
+                    <div class="product-img">
+                        <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png"
+                            alt="image">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="@/assets/img/providers/Rectangle897-4.png" alt="icon">
+                    </div>
+                </div>
+                <div class="product-info mt-2 flex items-center justify-between">
+                    <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Computer & Laptop</span>
+                    <!-- <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span> -->
+                </div>
+                <div class="product-title mt-2">
+                    <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
+                </div>
+                <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <div class="flex  items-center justify-start">
+                                <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                                <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                                
+                            </div>
+                            <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                        </div>
+                        <div class="flex w-full md:w-auto items-center justify-between">
+                            <!-- <span
+                            class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                            <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                        height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                            fill="#EFBC21" />
+                                    </svg>
+                            </span> 
+                            <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                            </span>
+                        </div>
+                    </div>
+                <div class="flex justify-between items-center mt-2">
+                    <button
+                        class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
+                            class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg"
+                                class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button
+                                type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z"
+                                fill="#112954" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.366211 7.99993C1.38561 4.75423 4.41785 2.3999 7.99998 2.3999C11.5821 2.3999 14.6143 4.75421 15.6337 7.99987C14.6143 11.2456 11.5821 13.5999 7.99996 13.5999C4.41786 13.5999 1.38563 11.2456 0.366211 7.99993ZM11.2 7.9999C11.2 9.76721 9.76732 11.1999 8.00001 11.1999C6.2327 11.1999 4.80001 9.76721 4.80001 7.9999C4.80001 6.23259 6.2327 4.7999 8.00001 4.7999C9.76732 4.7999 11.2 6.23259 11.2 7.9999Z"
+                                fill="#112954" />
+                        </svg></button>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
 
     <!-- subscription start -->
 
@@ -1148,11 +1286,11 @@ export default {
     </div>
 </div>
 
-<!-- subscrition End -->
+<!-- subscription End -->
 
-<div class="center grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 justify-between">
+            <div class="center grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 justify-between">
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png" alt="image">
@@ -1163,17 +1301,34 @@ export default {
                         </div>
                         <div class="product-info mt-2 flex items-center justify-between">
                             <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Accessories</span>
-                            <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                            <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                         </div>
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1195,7 +1350,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png" alt="image">
@@ -1211,14 +1366,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
@@ -1229,7 +1399,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png" alt="image">
@@ -1240,16 +1410,33 @@ export default {
                         </div>
                         <div class="product-info mt-2 flex items-center justify-between">
                             <span class="w-fit bg-[#EBF1FF] text-[#0052FE] text-xs font-bold p-2 rounded ">Gadget & Tablet</span>
-                            <span class="product-status flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                            <span class="product-status  md:flex hidden items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
                         </div>
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                            <div class="flex w-full md:w-auto items-center justify-between">
+                                <div class="flex  items-center justify-start">
+                                    <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                                    <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                                    
+                                </div>
+                                <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                            </div>
+                            <div class="flex w-full md:w-auto items-center justify-between">
+                                <span
+                                class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                                <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                            height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                                fill="#EFBC21" />
+                                        </svg>
+                                </span> 
+                                <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                                </span>
+                            </div>
                         </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
@@ -1272,7 +1459,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png" alt="image">
@@ -1288,14 +1475,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
@@ -1305,7 +1507,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png" alt="image">
@@ -1321,12 +1523,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1348,7 +1567,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png" alt="image">
@@ -1364,14 +1583,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
@@ -1382,7 +1616,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png" alt="image">
@@ -1398,12 +1632,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1425,7 +1676,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png" alt="image">
@@ -1441,14 +1692,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
@@ -1458,7 +1724,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png" alt="image">
@@ -1474,12 +1740,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1501,7 +1784,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png" alt="image">
@@ -1517,14 +1800,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
@@ -1535,7 +1833,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png" alt="image">
@@ -1551,12 +1849,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1578,7 +1893,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png" alt="image">
@@ -1594,14 +1909,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill="#112954"/>
@@ -1611,7 +1941,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/01.png" alt="image">
@@ -1627,12 +1957,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">AirPods Pro 2nd Gen</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1654,7 +2001,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/02.png" alt="image">
@@ -1670,14 +2017,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Studio Ultra Max</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span>  -->
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <!-- <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span> -->
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> <button type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 " xmlns="http://www.w3.org/2000/svg">
 <path d="M8.00001 9.5999C8.88366 9.5999 9.60001 8.88356 9.60001 7.9999C9.60001 7.11625 8.88366 6.3999 8.00001 6.3999C7.11635 6.3999 6.40001 7.11625 6.40001 7.9999C6.40001 8.88356 7.11635 9.5999 8.00001 9.5999Z" fill-rule="evenodd" fill="currentColor"/>
@@ -1688,7 +2050,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/03.png" alt="image">
@@ -1704,12 +2066,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Apple Watch Ultra</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$350</span> <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span> <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                     <button
                         class="btn-translate-z bg-[#112954] w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span
@@ -1731,7 +2110,7 @@ export default {
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#" class="flex w-60 mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
+                    <a href="#" class="flex w-full lg:w-[255px]  mb-3 p-2 flex-col transition-all border border-[#EBF1FF]  rounded-lg hover:shadow-md md:flex-col  bg-white">
                         <div class="img-box flex justify-center items-center relative h-[165px] w-full bg-[#F5F8FF]">
                             <div class="product-img">                                
                                 <img class="object-cover w-auto rounded-t-lg h-auto mx-auto" src="@/assets/img/products/04.png" alt="image">
@@ -1747,14 +2126,29 @@ export default {
                         <div class="product-title mt-2">
                             <h4 class="mb-2 text-base font-bold  text-[#2B313B]">Mac Mini 2022 M2 Pro</h4>
                         </div>
-                        <div class="product-price-info flex items-center justify-between">
-                            <span class="price text-[#F22222] text-base font-black ">$7289</span> 
-                            <!-- <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> <span class="saved-price bg-[#26BA65] text-white text-xs font-normal p-1 rounded">Saves €45.00</span>  -->
-                            <span class="rating-area flex items-top justify-between"><span class="icon mr-1"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z" fill="#EFBC21"/>
-</svg>
-</span> <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span></span>
+                        <div class="product-price-info flex  flex-col md:flex-row items-center justify-between">
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <div class="flex  items-center justify-start">
+                            <span class="price text-[#F22222] text-base font-black mr-2">$350</span> 
+                            <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
+                            
                         </div>
+                        <span class="product-status md:hidden flex items-center text-[#1D9E54] font-normal text-xs"><img src="@/assets/img/icons/sell-arrow-green.svg" class="mr-1 w-4 h-4" alt="icon"> -24%</span>
+                    </div>
+                    <div class="flex w-full md:w-auto items-center justify-between">
+                        <span
+                        class="saved-price whitespace-nowrap mr-0 md:mr-2 order-2 md:order-1 bg-[#26BA65] text-white text-xs font-normal px-[6px] py-1 rounded">Saves €45.00</span>
+                        <span class="rating-area mt-1 flex order-1 md:order-2 items-center justify-between"><span class="icon mr-1"><svg width="14"
+                                    height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54652 0.976481C6.72572 0.590614 7.27429 0.590616 7.45348 0.976482L8.86602 4.01808C8.93887 4.17496 9.08763 4.28304 9.25934 4.30385L12.5886 4.70734C13.0109 4.75853 13.1804 5.28025 12.8688 5.56992L10.4126 7.85323C10.2859 7.97099 10.2291 8.14587 10.2624 8.31561L10.9074 11.6066C10.9892 12.0241 10.5454 12.3465 10.1737 12.1397L7.24309 10.5092C7.09194 10.4252 6.90806 10.4252 6.75691 10.5092L3.82634 12.1397C3.45456 12.3465 3.01076 12.0241 3.09259 11.6066L3.73763 8.31561C3.7709 8.14587 3.71408 7.97099 3.58739 7.85323L1.13116 5.56992C0.819553 5.28025 0.989072 4.75853 1.41143 4.70734L4.74066 4.30385C4.91237 4.28304 5.06113 4.17495 5.13398 4.01808L6.54652 0.976481Z"
+                                        fill="#EFBC21" />
+                                </svg>
+                        </span> 
+                        <span class="rating-count text-[#6C7A93] text-xs font-normal">4.9 | 230</span>
+                        </span>
+                    </div>
+                </div>
                         <div class="flex justify-between items-center mt-2">
                         <button class="btn-translate-z bg-[#112954]  w-full opacity-100 hover:opacity-90 transition text-white flex text-sm font-bold text-center justify-center items-center rounded-md py-[10px] px-2"><span class="flex items-center"><img src="@/assets/img/icons/offer-arrow-24.svg" class="mr-2 h-4 w-4 float-right" alt="icon"> View Offer </span></button> 
                         <button  type="button" class="modal-btn view-icon py-2.5 px-2.5 ml-2 border transition-all border-[#112954] rounded-md"><svg width="16" height="16" viewBox="0 0 16 16" fill="#112954" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">

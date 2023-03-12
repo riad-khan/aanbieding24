@@ -1747,5 +1747,13 @@ nav a {
         right: 0;
         border-right: none;
     }
+    .provider-information {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .text-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
  
 }

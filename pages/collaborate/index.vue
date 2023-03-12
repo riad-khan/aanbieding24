@@ -6,6 +6,70 @@ import Chart from 'chart.js/auto/auto.mjs';
 export default {
     data() {
         return {
+          config3: {
+                  type: 'pie',
+                  data: {
+                    labels: [
+                      'Male',
+                      'Female'
+                    ],
+                    datasets: [{
+                      label: 'My First Dataset',
+                      data: [75, 25],
+                      backgroundColor: [
+                        '#0052FE',
+                        '#A4BCE6'
+                      ],
+                      hoverOffset: 3
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    borderWidth: 0,
+                    rotation: 90,
+                    plugins: {
+                      legend: true,
+                      tooltip: false,
+                    },
+                  }
+                },
+          config2: {
+            type: 'bar',
+              data: {
+              labels: ["18-24","25-34","35-44","45-54","55-64","65+"],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [5,18,13,22,3,12],
+                backgroundColor: [
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE'
+                ],
+                borderColor: [
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE',
+                  '#0052FE'
+                ],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            },
+          },
           config1: {
         type: 'line',
         data: {
@@ -29,8 +93,8 @@ export default {
         layout: {
             padding: 0            
           },
-          responsive: true,
-          maintainAspectRatio: false,
+        responsive: true,
+        maintainAspectRatio: false,
           scales: {
             y: {
               display: true
@@ -69,6 +133,8 @@ export default {
         }
       },
       myChart2: null,
+      myChart3: null,
+      myChart4: null,
         }
     },
     mounted() {
@@ -77,15 +143,29 @@ export default {
     },
 methods: {
         ChartRender() {
-      if (this.myChart2 != null) {
-        this.myChart2.destroy();
-      }
-      this.myChart2 = new Chart(
-        document.getElementById('myChart2'),
-        this.config1
-      );
+          if (this.myChart2 != null) {
+            this.myChart2.destroy();
+          }
+          this.myChart2 = new Chart(
+            document.getElementById('myChart2'),
+            this.config1
+          );
+          if (this.myChart3 != null) {
+            this.myChart3.destroy();
+          }
+          this.myChart3 = new Chart(
+            document.getElementById('myChart3'),
+            this.config2
+          );
+          if (this.myChart4 != null) {
+            this.myChart4.destroy();
+          }
+          this.myChart4 = new Chart(
+            document.getElementById('myChart4'),
+            this.config3
+          );
 
-    },
+        },
     }
 }
 </script>
@@ -111,18 +191,29 @@ methods: {
                             <li class="text-[#6C7A93] text-base font-normal leading-7 ">There is a growing trend visible in search behavior for offers due to rising prices and a declining purchasing power.</li>
                         </ul>
                 </div>
-                <div class="chart-wrapper my-8">
+                <div class="chart-wrapper hidden md:block my-8">
                     <div ref="aanbiending24" class="">
                         <canvas id="myChart2" height="280"></canvas>
+                    </div>
+                </div>
+                <div class="chart-wrapper-b block md:hidden my-8">
+                  <h4 class="text-[#2B313B] text-2xl font-bold mb-6">Target audience</h4>
+                    <div ref="aanbiending24" class="">
+                        <canvas id="myChart3" height="400"></canvas>
+                    </div>
+                </div>
+                <div class="chart-wrapper-c block md:hidden my-8">
+                    <div ref="aanbiending24" class="">
+                        <canvas id="myChart4" height="400"></canvas>
                     </div>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-inner p-6 md:p-16">
                         <h3 class="text-white text-2xl font-bold mx-auto mb-6 text-center">Join with us</h3>
                         <form action="">
-                            <div class="flex items-center justify-between mb-4">
-                                <input type="text" name="name" placeholder="Full Name" class="w-full mr-2 text-[#6C7A93] text-xs font-normal">
-                                <input type="email" name="email" placeholder="johndoe@email.com" class="w-full ml-2 text-[#6C7A93] text-xs font-normal">
+                            <div class="flex flex-col md:flex-row items-center justify-between mb-4">
+                                <input type="text" name="name" placeholder="Full Name" class="w-full mb-4 md:mb-0 mr-0 md:mr-2 text-[#6C7A93] text-xs font-normal">
+                                <input type="email" name="email" placeholder="johndoe@email.com" class="w-full ml-0 md:ml-2 text-[#6C7A93] text-xs font-normal">
                             </div>
                             <textarea name="" id="" cols="" rows="10" placeholder="Message" class="w-full text-[#6C7A93] text-xs font-normal">
                                 

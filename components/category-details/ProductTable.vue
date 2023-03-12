@@ -45,7 +45,7 @@ td.price-info {
 </style>
 <template>
     <div class="product-table-wrapper">
-        <table class="table-auto w-full">
+        <table class="w-full">
   <thead class="table-head">
     <tr class="text-xs text-left text-[#2B313B] font-bold p-4">
       <th class="p-4">#</th>
@@ -63,13 +63,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Wehkamp Hotels</td>
         <td class="text-[#2B313B] text-sm font-normal">Forza Barolo corner lounge set 6-piece</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -96,10 +96,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -111,13 +111,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Kees Smith</td>
         <td class="text-[#2B313B] text-sm font-normal">Lounge set Luxor - pillows included</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -144,10 +144,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -159,13 +159,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Kees Smith</td>
         <td class="text-[#2B313B] text-sm font-normal">Forza Barolo lounge corner module 85cm</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -192,10 +192,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -207,13 +207,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Blocker</td>
         <td class="text-[#2B313B] text-sm font-normal">Forza Barolo chaise longue lounge set 5 pieces</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -240,10 +240,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -255,13 +255,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">fonq</td>
         <td class="text-[#2B313B] text-sm font-normal">Sens-Line Elba Lounge Set</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -288,10 +288,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -303,13 +303,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Heuts Hotels</td>
         <td class="text-[#2B313B] text-sm font-normal">Corner chair Baccarra Loungeset</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -336,10 +336,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -351,13 +351,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Wehkamp Hotels</td>
         <td class="text-[#2B313B] text-sm font-normal">wehkamp home lounge set Berkeley</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -384,10 +384,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -399,13 +399,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Van der Garde</td>
         <td class="text-[#2B313B] text-sm font-normal">Allibert lounge chair California (set of 2)</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -432,10 +432,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -447,13 +447,13 @@ td.price-info {
         <td class="text-[#2B313B] text-sm font-normal">Van der Garde</td>
         <td class="text-[#2B313B] text-sm font-normal">Cordoba lounge dining set - Links</td>
         <td class="price-info flex flex-row items-start w-full md:w-auto  justify-between md:justify-start md:flex-col">
-            <div class="flex flex-row items-start justify-start md:flex-col">
+            <div class="flex flex-row items-center justify-start md:flex-col">
 
                 <span class="price text-[#2B313B] text-sm font-normal">$350</span> 
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -480,10 +480,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -501,7 +501,7 @@ td.price-info {
                 <span class="original-price line-through text-[#D3D7DE] text-xs font-normal">$390</span> 
             </div>
 
-            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span>
+            <span class="saved-price whitespace-nowrap flex md:hidden bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span>
             <span class="rating-area flex md:hidden items-top justify-start">
                 <span class="icon mr-1">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
@@ -528,10 +528,10 @@ td.price-info {
             </span>
         </td>
         <td class="save-info-tag hidden md:table-cell">
-            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold p-1 rounded">Saves €45.00</span> 
+            <span class="saved-price whitespace-nowrap bg-[#26BA65] text-white text-xs font-bold px-[6px] py-1 rounded">Saves €45.00</span> 
         </td>
         <td class="product-info-modal text-center">
-                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] p-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
+                <a href="" target="_blank" class="flex items-center justify-center border border-[#0052FE] px-[6px] py-1 text-[#0052FE] hover:text-white hover:bg-[#0052FE] transition  rounded font-bold text-xs w-24">
                                         View <svg width="13" height="13" viewBox="0 0 13 13" class="mx-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.6875 2.5625H2.5625V10.4375H10.4375V6.3125M10.4375 2.5625L6.3125 6.6875M8.5625 1.8125H11.1875V4.4375" stroke="#0052FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

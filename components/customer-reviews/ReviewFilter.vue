@@ -47,6 +47,11 @@ export default {
 }
 
 </script>
+<style scoped>
+.img-box, .product-img {
+    width: 100%;
+}
+</style>
 <template>
         <div class="heading-area mt-6">
             <h2 class="flex items-center text-[#2B313B] font-bold text-[20px] mb-1">Filters</h2>
@@ -57,7 +62,7 @@ export default {
             <div class="dropdown-area flex items-center justify-between">
                 <form action="" class="flex flex-col text-left">
                     <div class="mb-1">
-                        <div class="no-label w-full sm:w-28">
+                        <div class="no-label w-28">
                             <div class="select" id="popular">
                                 <div class="selectBtn star-icon" data-type="firstOption"> 5 Star</div>
                                 <div class="selectDropdown">
@@ -79,7 +84,7 @@ export default {
                 </form>
                 <form action="" class="flex flex-col mx-2 text-left">
                     <div class="mb-1">
-                        <div class="no-label w-full sm:w-28">
+                        <div class="no-label w-28">
                             <div class="select" id="price">
                                 <div class="selectBtn" data-type="firstOption"> New - Old</div>
                                 <div class="selectDropdown">
@@ -91,7 +96,7 @@ export default {
                 </form>
                 <form action="" class="flex flex-col text-left">
                     <div class="mb-1">
-                        <div class="no-label w-full sm:w-28">
+                        <div class="no-label w-28">
                             <div class="select" id="provider">
                                 <div class="selectBtn" data-type="firstOption"> All Providers</div>
                                 <div class="selectDropdown">
@@ -111,7 +116,7 @@ export default {
                     </div>
                 </form>
             </div>
-            <div class="btn-area  flex items-center">
+            <div class="btn-area hidden md:flex items-center">
                 <button
                     class="flex items-center text-[#fff] text-xs font-normal bg-[#26BA65] transition hover:bg-[#1da859] px-3 py-2 mr-2 rounded-[5px]">
                             <svg width="12" height="12" viewBox="0 0 12 12" class="mr-2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,9 +141,9 @@ export default {
                     
                     <div class="product-img flex flex-col items-center">
 
-                        <div class="img-box relative rounded-[5px]  bg-[#F5F8FF]">
-                            <div class="product-img flex justify-center items-center h-[142px] w-[168px]">
-                                <img class="object-cover w-auto h-[112px] mx-auto"
+                        <div class="img-box relative w-full md:w-auto rounded-[5px]  bg-[#F5F8FF]">
+                            <div class="product-img flex justify-center items-center w-full h-[264px] md:h-[142px] md:w-[168px]">
+                                <img class="object-cover w-auto h-[175px] md:h-[112px] mx-auto"
                                     src="@/assets/img/products/05.png" alt="image">
                             </div>
                             <div class="brand-logo">
@@ -195,9 +200,9 @@ export default {
                     
                     <div class="product-img flex flex-col items-center">
 
-                        <div class="img-box relative rounded-[5px]  bg-[#F5F8FF]">
-                            <div class="product-img flex justify-center items-center h-[142px] w-[168px]">
-                                <img class="object-cover w-auto h-[112px] mx-auto"
+                        <div class="img-box relative w-full md:w-auto rounded-[5px]  bg-[#F5F8FF]">
+                            <div class="product-img flex justify-center items-center w-full h-[264px] md:h-[142px] md:w-[168px]">
+                                <img class="object-cover w-auto h-[175px] md:h-[112px] mx-auto"
                                     src="@/assets/img/products/06.png" alt="image">
                             </div>
                             <div class="brand-logo">
@@ -254,9 +259,9 @@ export default {
                     
                     <div class="product-img flex flex-col items-center">
 
-                        <div class="img-box relative rounded-[5px]  bg-[#F5F8FF]">
-                            <div class="product-img flex justify-center items-center h-[142px] w-[168px]">
-                                <img class="object-cover w-auto h-[112px] mx-auto"
+                        <div class="img-box relative w-full md:w-auto rounded-[5px]  bg-[#F5F8FF]">
+                            <div class="product-img flex justify-center items-center w-full h-[264px] md:h-[142px] md:w-[168px]">
+                                <img class="object-cover w-auto h-[175px] md:h-[112px] mx-auto"
                                     src="@/assets/img/products/07.png" alt="image">
                             </div>
                             <div class="brand-logo">
@@ -313,9 +318,9 @@ export default {
                     
                     <div class="product-img flex flex-col items-center">
 
-                        <div class="img-box relative rounded-[5px]  bg-[#F5F8FF]">
-                            <div class="product-img flex justify-center items-center h-[142px] w-[168px]">
-                                <img class="object-cover w-auto h-[112px] mx-auto"
+                        <div class="img-box relative w-full md:w-auto rounded-[5px]  bg-[#F5F8FF]">
+                            <div class="product-img flex justify-center items-center w-full h-[264px] md:h-[142px] md:w-[168px]">
+                                <img class="object-cover w-auto h-[175px] md:h-[112px] mx-auto"
                                     src="@/assets/img/products/08.png" alt="image">
                             </div>
                             <div class="brand-logo">
